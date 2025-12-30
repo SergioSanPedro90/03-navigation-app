@@ -1,13 +1,24 @@
+import { Link, Redirect } from "expo-router";
 import { View, Text } from "react-native";
+import { SafeAreaView } from "react-native-safe-area-context";
 
 const App = () => {
   return (
+
+    <Redirect href={'/home'} />
     
-      <View className="flex-1 justify-center items-center bg-red-500">
-        <Text className="text-2xl font-work-black">index</Text>
-        <Text className="text-2xl font-work-light">index</Text>
-        <Text className="text-2xl font-work-medium">index</Text>
-      </View>
+      //  <SafeAreaView>
+      //   <View className="p-4">
+      //   <Text className="text-2xl font-work-black text-primary">Hola Mundo</Text>
+      //   <Text className="text-2xl font-bold font-work-light text-secondary-200">Hola Mundo</Text>
+      //   <Text className="text-2xl font-work-medium text-tertiary">Hola Mundo</Text>
+
+      //   <Link href={'/products' as any}>
+      //     <Text>Productos</Text>
+      //   </Link>
+      //   </View>
+      // </SafeAreaView>
+
     
   );
 };
