@@ -1,6 +1,7 @@
 import { products } from '@/store/products.store'
 import { Link } from 'expo-router'
 import { View, Text, FlatList } from 'react-native'
+import { SafeAreaView } from 'react-native-safe-area-context'
 const ProductsScreen = () => {
   return (
     <View className='flex-1 px-4'>

@@ -5,22 +5,22 @@ import { SafeAreaView } from "react-native-safe-area-context";
 const HomeScreen = () => {
   return (
     <SafeAreaView>
-      <View className="px-10">
+      <View className="px-10 mt-5">
         <BotonsComponent
           color="primary"
-          onPress={() => router.push("/products")}
+          onPress={() => router.push("/tabs/(stacks)/products")}
         >
           Productos
         </BotonsComponent>
         <BotonsComponent
           color="secondary"
-          onPress={() => router.push("/profile")}
+          onPress={() => router.push("/tabs/(stacks)/profile")}
         >
           Perfil
         </BotonsComponent>
         <BotonsComponent
           color="tertiary"
-          onPress={() => router.push("/settings")}
+          onPress={() => router.push("/tabs/(stacks)/settings")}
         >
           Ajustes
         </BotonsComponent>
